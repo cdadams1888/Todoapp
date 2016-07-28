@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To Do App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+	integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script>
+	<![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+  <div class="container">
+    <div id="to_do">
+      <h2 class="jumbotron">TO-DO</h2>
+      <div class="input-group center-block">
+      <input id="task_to_add" type="text" class="form-control"
+      placeholder="Add something you need to do...">
+      <span class="input-group-btn">
+        <button class="btn btn-success" type="submit" onclick="add_task()">ADD TASK</button>
+      </span>
+      </div><!-- /input-group -->
+    </div><!-- end of to-do div-->
+    <div id="in_progress">
+      <h2 class="jumbotron">IN PROGRESS</h2>
+        <ul class="list-group center-block" id ="add_to_list">
+        <!-- filled in through JavaScript-->
+        </ul>
+      </div><!-- end of in progress div -->
+    <div id="completed">
+      <h2 class="jumbotron">COMPLETED</h2>
+      <ul class="list-group center-block" id="completed">
+      <!-- filled in through JavaScript-->
+      </ul>
+    </div><!-- end of completed div-->
+  </div>
+</div><!--end of main container-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script src="javascript/script.js"></script>
+</html>
